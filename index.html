@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Dharma Teja Gurram">
+    <meta name="description" content="Portfolio website of Dharma Teja Gurram">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dharma Teja Gurram | Home</title>
-
+    <!-- <link rel="icon" type="image/png" href="sources/icon.png"/> -->
+    <link rel="shortcut icon" href="../sources/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,14 +75,19 @@
                 <a href="about.html" id="abt">ABOUT</a>
                 
                 `;
+            } else if (width < 965){
+                menbar.innerHTML= ``;
             }
         }
     </script>
     <section class="navbar">
-        <div class="title">
-            Dharma Teja Gurram <br>
-            <span>UG student</span>
-        </div>
+        <a id="title-band" href="about.html">
+            <div class="title">
+                Dharma Teja Gurram <br>
+                <span>UG student</span>
+            </div>
+        </a>
+        
         <div class="nav">
             <a href="" id="home" class="active" >HOME</a>
             <a href="xplorations.html" id="xplo">EXPLORATIONS</a>
@@ -92,6 +100,9 @@
             </a>
         </div>
     </section>
+    <div class="pagetitle">
+        PROJECTS
+    </div>
     <section id="works">
         <a href="works/project_template.html" class="work">
             <div class="title">Memristor Hardware accelerator</div>
