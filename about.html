@@ -65,6 +65,7 @@
         window.onresize = function(){
             var menbar = document.querySelector(".nav");
             var width = window.innerWidth;
+            var op = window.getComputedStyle(menbar).opacity;
             if (width >= 965){
                 
                 menbar.innerHTML= `
@@ -73,7 +74,7 @@
                 <a href="sources/Dharma_Resume.pdf" target="_blank" id="resu">RESUME</a>
                 <a href="about.html" id="abt" class="active">ABOUT</a>
                 `;
-            }else if (width < 965){
+            }else if (width < 965 && op === "0"){
                 menbar.innerHTML= ``;
             }
         }
