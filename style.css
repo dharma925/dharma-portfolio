@@ -1,0 +1,330 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body .navbar{
+    /* width: 100vw; */
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .navbar .title{
+    font-size: 2em;
+    line-height: 1em;
+    margin-left: 2em;
+
+}
+
+body .navbar .title span{
+    font-size: 0.9rem;
+
+}
+
+body .navbar .nav{
+    margin-right: 3em;
+}
+
+body .navbar .nav a{
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+    font-size: 1em;
+    opacity: 75%;
+    font-weight: 420;
+}
+
+body .navbar .nav a:hover{
+    opacity: 85%;
+}
+body .navbar .nav .active{
+    opacity: 100%;
+}
+
+#works{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 90vw; */
+    /* margin-left: 5vw; */
+    margin-top: 8vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#works a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    width: 35rem;
+    color: black;
+    gap: 1em;
+
+}
+
+#works a .imgbx{
+    overflow: hidden;
+    margin-top: 1em;
+    position: relative;
+    
+}
+
+#works a .imgbx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#works a:hover .imgbx img{
+    opacity: 75%;
+}
+#works a .title{
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+
+}
+
+#works a .description{
+    font-size: large;
+    opacity: 80%;
+    margin-top: .5em;
+    text-align: justify;
+
+}
+
+/* Bio in about page */
+
+#bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    align-content: center;
+    gap: 4em;
+}
+
+#bio .imgbx{
+    width: 18em;
+    height: 21.6em;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 50%; */
+}
+
+#bio .imgbx img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#bio .data{
+    margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-evenly;
+
+}
+
+#bio .data p{
+    opacity: 75%;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+#bio .data .connect a{
+    text-decoration: none;
+    padding-top: 1em;
+    margin: .5em 1em .5em 0;
+    color: black;
+    font-size: 1.1em;
+}
+
+#bio .data .connect a:hover{
+    opacity: 85%;
+}
+
+
+/* Projects */
+#project{
+    width: 80vw;
+    margin:8vw 0 10vw 10vw;
+
+}
+
+#project .title{
+    display: flex;
+    flex-direction: row;
+
+
+}
+#project .title .tit h1{
+    font-size: 4em;
+    font-weight: 350;
+    line-height: 1em;
+}
+#project .title .tit span{
+    font-size: 1rem;
+    margin: 3em 0;
+}
+#project .title a{
+    margin-left: 50vw;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#project .description{
+    margin: 2em 0;
+    font-size: 1.1em;
+    opacity: 70%;
+
+}
+
+#project .specs{
+    font-size: 1.2rem;
+}
+
+#project .specs .specs{
+    font-size: 1.1rem;
+    opacity: 70%;
+}
+
+#project .imgbx{
+    width: auto;
+    height: 60vh;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 ;
+
+}
+
+#project .imgbx img{
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+#project .problem h1{
+    margin: 1em 0 .25em 20vw;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#project .problem p{
+    font-size: 1.1em;
+    margin: 0em 0 1em 20vw;
+}
+
+#project .approach span{
+    font-size: 1.2rem;
+}
+
+#project .approach p{
+    margin: .5em 0 .25em 20vw;
+    font-size: 1.1em;
+}
+
+#project .results span{
+    font-size: 1.2rem;
+}
+
+#project .results p{
+    margin: .5em 0 .25em 20vw;
+    font-size: 1.1em;
+}
+
+#project .references span{
+    font-size: 1.2rem;
+}
+
+#project .references ol{
+    margin: .5em 0 .25em 20vw;
+    font-size: 1.1em;
+}
+
+#project .references ol li{
+    margin: 0.25em;
+}
+
+
+/* Blog page */
+
+#blog{
+    width: 80vw;
+    margin:8vw 0 10vw 10vw;
+
+}
+
+
+#blog .title h1{
+    font-size: 4em;
+    font-weight: 350;
+    line-height: 1em;
+}
+#blog .title span{
+    font-size: 1rem;
+    margin: 3em 0;
+}
+
+#blog .description{
+    margin: 2em 0;
+    font-size: 1.1em;
+    opacity: 70%;
+
+}
+
+#blog .imgbx{
+    width: auto;
+    height: 60vh;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 ;
+
+}
+
+#blog .imgbx img{
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+#blog .data{
+    margin: 3em 10vw;
+    font-size: 1.1rem;
+}
+
+#blog .conclusions span{
+    font-size: 1.2rem;
+}
+
+#blog .conclusions ul{
+    margin: .5em 0 .25em 20vw;
+    font-size: 1.1em;
+}
+
+#blog .conclusions ul li{
+    margin: 0.25em;
+}
+
+
+#blog .references span{
+    font-size: 1.2rem;
+}
+
+#blog .references ol{
+    margin: .5em 0 .25em 20vw;
+    font-size: 1.1em;
+}
+
+#blog .references ol li{
+    margin: 0.25em;
+}
