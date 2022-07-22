@@ -26,7 +26,11 @@ body .navbar .title span{
 
 body .navbar .nav{
     margin-right: 3em;
+    display: flex;
+    gap: 1em;
 }
+
+
 
 body .navbar .nav a{
     text-decoration: none;
@@ -42,6 +46,9 @@ body .navbar .nav a:hover{
 }
 body .navbar .nav .active{
     opacity: 100%;
+}
+body .navbar .ham{
+    display: none;
 }
 
 #works{
@@ -327,4 +334,86 @@ body .navbar .nav .active{
 
 #blog .references ol li{
     margin: 0.25em;
+}
+
+@media screen and (min-width:965px){
+    body .navbar .nav{
+        display: flex!important;
+        opacity: 1;
+    }
+    body .navbar .ham{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width:965px){
+    
+    body .navbar .nav{
+        display: flex;
+        flex-direction: column;
+        width: 97vw;
+        height: 0;
+        opacity: 0;
+        margin-right: 0;
+        align-items: center;
+        margin-top: 15vh;
+        top: 0;
+        position: absolute;
+
+        gap: 0em;
+        
+    }
+    body .navbar .ham{
+        display: block;
+        margin: 5em;
+        font-size: 1.4em;
+        
+    }
+    body .navbar .title{
+        font-size: 1.5em;
+    }
+    #bio .data{
+        margin-left: 0;
+    }
+    #bio .data .connect{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        margin-bottom: 3em;
+    }
+    #project .title a{
+        margin-left: 30vw;
+    }
+    
+}
+
+
+
+@media screen and (max-width:650px){
+    body .navbar .ham{
+        margin: 2em ;
+    }
+    body .navbar .title{
+        font-size: 1.2em;
+    }
+
+    #works a{
+        width: 90vw;
+    }
+    #bio .imgbx {
+        width: 60vw;
+        height: 72vw;
+    }
+    #blog .imgbx{
+        height: 60vw;
+    }
+    #project .imgbx{
+        height: 60vw;
+    }
+    #project .title{
+        flex-direction: column;
+    }
+
 }
