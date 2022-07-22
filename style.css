@@ -339,7 +339,9 @@ body .navbar .ham{
 @media screen and (min-width:965px){
     body .navbar .nav{
         display: flex!important;
-        opacity: 1;
+        opacity: 1!important;
+        height: auto!important;
+        transition: 0s!important;
     }
     body .navbar .ham{
         display: none;

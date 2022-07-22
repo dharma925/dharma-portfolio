@@ -28,6 +28,7 @@
                 bar.style.transitionDelay = ".5s";
                 setTimeout(() => {
                     menbar.innerHTML= ``;
+                    menbar.style.transition = "0s";
                 }, 1500);
                 
             }
@@ -46,9 +47,26 @@
                 bar.style.transition = "1s";
                 menbar.style.transition = "1s";
                 menbar.style.transitionDelay = ".5s";
+                setTimeout(() => {
+                    menbar.style.transition = "0s";
+                }, 1500);
 
             }
 
+        }
+
+        window.onresize = function(){
+            var menbar = document.querySelector(".nav");
+            var width = window.innerWidth;
+            if (width >= 965){
+                
+                menbar.innerHTML= `
+                <a href="index.html" id="home" >HOME</a>
+                <a href="xplorations.html" id="xplo" class="active">EXPLORATIONS</a>
+                <a href="sources/Dharma_Resume.pdf" target="_blank" id="resu">RESUME</a>
+                <a href="about.html" id="abt">ABOUT</a>
+                `;
+            }
         }
     </script>
     <section class="navbar">
@@ -57,10 +75,10 @@
             <span>UG student</span>
         </div>
         <div class="nav">
-            <!-- <a href="index.html" id="home" >HOME</a>
+            <a href="index.html" id="home" >HOME</a>
             <a href="xplorations.html" id="xplo" class="active">EXPLORATIONS</a>
             <a href="sources/Dharma_Resume.pdf" target="_blank" id="resu">RESUME</a>
-            <a href="about.html" id="abt">ABOUT</a> -->
+            <a href="about.html" id="abt">ABOUT</a>
         </div>
         <div class="ham" >
             <a onclick="showmenu()">
